@@ -1,9 +1,11 @@
+def perfectt(n):
+    s=0
+    for i in range(1,n):
+        if n%i==0:
+            s+=i
+    if n==s:
+        return True
+    else:
+        return False
 n=int(input())
-sum=0
-for i in range(1,n):
-    if n%i==0:
-        sum+=i
-if sum==n:
-    print("True")
-else:
-    print("False")
+print(perfectt(n))
